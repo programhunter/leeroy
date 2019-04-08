@@ -32,14 +32,14 @@
         </configuration>
       </plugin>
       
-      <plugin>  <!-- Create sources.jar -->
+      <plugin>  <!-- Create sources.war -->
             <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>war</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -52,7 +52,7 @@
                     <execution>
                         <id>attach-javadocs</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>war</goal>
                         </goals>
                     </execution>
                 </executions>
